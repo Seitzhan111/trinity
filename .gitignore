@@ -1,0 +1,8 @@
+#Folders
+.idea
+./.idea
+
+#Files
+.prepros.config
+prepros.config
+./.prepros.config

@@ -1,0 +1,191 @@
+@font-face {
+  font-family: "Stolzl";
+  src: url("../fonts/Stolzl-Regular.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Stolzl";
+  src: url("../fonts/Stolzl-Bold.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Stolzl";
+  src: url("../fonts/Stolzl-Medium.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Stolzl";
+  src: url("../fonts/Stolzl-Bold.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 700;
+}
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+img {
+  width: 100%;
+}
+
+button {
+  border: none;
+  outline: none;
+}
+
+a {
+  color: inherit;
+}
+
+body {
+  font-family: "Stolzl", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  min-height: 100vh;
+  background-color: #2B2B2B;
+}
+
+.container {
+  max-width: 182rem;
+  width: 100%;
+  padding: 0 2rem;
+  margin: 0 auto;
+}
+
+.button-primary, .button-secondary {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: none;
+  color: #fff;
+  border-radius: 1rem;
+  padding: 1.1rem 7.7rem;
+  cursor: pointer;
+  transition: all 0.2s ease-out;
+}
+.button-primary:hover, .button-secondary:hover {
+  background: #2EACB0;
+  box-shadow: 0 0 2rem #245C5F;
+  transition: all 0.2s ease-out;
+}
+
+.button-primary {
+  color: #fff;
+  background: #33B7BC;
+}
+
+.button-secondary {
+  color: #33B7BC;
+  border: 0.1rem solid #33B7BC;
+  background: transparent;
+}
+.button-secondary:hover {
+  color: #fff;
+}
+
+.text-input {
+  background: linear-gradient(90.75deg, #1C1C1C 0.65%, rgba(27, 27, 27, 0.4) 107.06%);
+  border-radius: 1rem;
+  color: #707070;
+  font-size: 1.4rem;
+  font-family: "Stolzl", sans-serif;
+  font-weight: 400;
+  width: 47.5rem;
+  height: 5rem;
+  padding: 1.5rem 0 1.5rem 3rem;
+  display: block;
+  margin-top: 2rem;
+  margin-left: 2rem;
+  border: 0.1rem solid transparent;
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+}
+.text-input:hover {
+  background: linear-gradient(90.75deg, #1C1C1C 0.65%, #1B1B1B 107.06%);
+}
+.text-input:focus {
+  outline: none;
+}
+
+.border-input {
+  position: relative;
+  width: 47.5rem;
+  height: 5rem;
+  margin-top: 2rem;
+  margin-left: 2rem;
+  border-radius: 0.1rem;
+}
+.border-input::after {
+  content: "";
+  position: absolute;
+  top: -1px;
+  bottom: -1px;
+  left: 19px;
+  right: -21px;
+  background: linear-gradient(288deg, rgba(47, 47, 47, 0.9332107843) 29%, rgb(67, 67, 67) 100%);
+  border-radius: 1.1rem;
+  z-index: -1;
+}
+
+.header {
+  position: relative;
+}
+.header__bg {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  z-index: -2;
+}
+.header::before {
+  content: "";
+  background: linear-gradient(180deg, rgba(22, 21, 22, 0.9) -7.87%, rgba(22, 21, 22, 0.6) 100%) top/contain;
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.header__row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  flex-direction: column;
+}
+
+h1 {
+  font-family: "Stolzl";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 120px;
+  line-height: 90px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+p {
+  font-family: "Stolzl";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 90px;
+  /* or 281% */
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+/*# sourceMappingURL=style.css.map */

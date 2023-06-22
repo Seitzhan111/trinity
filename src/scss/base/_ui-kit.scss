@@ -1,0 +1,74 @@
+
+.button-primary, .button-secondary{
+  @include font('Montserrat', normal, 500, 1.6rem, none, $color-white);
+  border-radius: 1rem;
+  padding: 1.1rem 7.7rem;
+  cursor: pointer;
+  transition: all .2s ease-out;
+
+  &:hover{
+	background: #2EACB0;
+	box-shadow: 0 0 2rem $button-primary-box-shadow;
+	transition: all .2s ease-out;
+  }
+}
+
+.button-primary{
+  color: $color-white;
+  background: $button-color;
+}
+
+.button-secondary{
+  color: $button-color;
+  border: .1rem solid $button-color;
+  background: transparent;
+  &:hover{
+	color: $color-white;
+  }
+}
+
+.text-input{
+  background: linear-gradient(90.75deg, $input-color 0.65%, $input-color-gradient 107.06%);
+  border-radius: 1rem;
+  color: $input-text-color;
+  font-size: 1.4rem;
+  font-family: 'Stolzl',sans-serif;
+  font-weight: 400;
+  width: 47.5rem;
+  height: 5rem;
+  padding: 1.5rem 0 1.5rem 3rem;
+  display: block;
+  margin-top: 2rem;
+  margin-left: 2rem;
+  border: .1rem solid transparent;
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+  &:hover{
+	background: linear-gradient(90.75deg, $input-color 0.65%, $input-color-hover 107.06%);
+  }
+  &:focus{
+    outline: none;
+  }
+}
+
+.border-input{
+  position: relative;
+  width: 47.5rem;
+  height: 5rem;
+  margin-top: 2rem;
+  margin-left: 2rem;
+  border-radius: .1rem;
+  &::after{
+    content: "";
+    position: absolute;
+    top: -1px;
+    bottom: -1px;
+    left: 19px;
+    right: -21px;
+    background: linear-gradient(288deg, rgba(47, 47, 47, 0.9332107843) 29%, rgb(67, 67, 67) 100%);
+    border-radius: 1.1rem;
+    z-index: -1;
+  }
+}
+
+
